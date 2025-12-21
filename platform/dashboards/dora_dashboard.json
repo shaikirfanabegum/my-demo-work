@@ -1,0 +1,23 @@
+{
+  "title": "DevOps DORA Metrics",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Deployment Frequency",
+      "targets": [
+        {
+          "expr": "dora_deployment_frequency"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Lead Time (seconds)",
+      "targets": [
+        {
+          "expr": "dora_lead_time_seconds"
+        }
+      ]
+    }
+  ]
+}
