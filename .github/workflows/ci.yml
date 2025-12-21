@@ -1,0 +1,16 @@
+name: CI (Governed)
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+jobs:
+  governed_ci:
+    uses: ./.github/workflows/_template-ci.yml
+    with:
+      service_name: inference-api
+      docker_context: ./apps/inference-api
+      dockerfile: ./apps/inference-api/Dockerfile
+    secrets:
+      GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
