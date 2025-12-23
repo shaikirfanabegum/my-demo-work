@@ -1,0 +1,23 @@
+replicaCount: 3
+
+image:
+  tag: "prod"
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 800m
+    memory: 1Gi
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 65
+
+probes:
+  type: http
+  http:
+    path: /health
