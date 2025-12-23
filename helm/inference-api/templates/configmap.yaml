@@ -1,0 +1,10 @@
+{{- if .Values.config.enabled -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "inference-api.fullname" . }}-config
+  labels:
+    {{- include "inference-api.labels" . | nindent 4 }}
+data:
+  {{- toYaml .Values.config.data | nindent 2 }}
+{{- end -}}
