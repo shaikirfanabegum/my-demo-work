@@ -164,7 +164,7 @@ Dashboards populated in Grafana
 
 Stable inference API responding to requests
 
-🧠 What This Demo Proves
+
 
 This project demonstrates:
 
