@@ -41,50 +41,11 @@ The ML logic itself is intentionally simple — **the focus is the platform, not
 
 ---
 
-## 🏗️ High-Level Architecture
-
-GitHub Repository
-│
-├── Application Code (Inference API)
-│
-├── Helm Chart
-│ ├── Deployment
-│ ├── Service
-│ └── Configurable values
-│
-├── Kubernetes Cluster (k3d / on-prem)
-│
-├── Platform Observability
-│ ├── Prometheus (metrics collection)
-│ └── Grafana (dashboards & visualization)
-
+<img width="606" height="460" alt="image" src="https://github.com/user-attachments/assets/2d08138a-4e40-47e1-aef1-fe6c64b3d85d" />
 
 ---
 
-## 📂 Repository Structure
-
-
-
-humana-ai-ml-devops-demo/
-│
-├── app/
-│ └── inference-api/
-│ └── source code for the API
-│
-├── helm/
-│ └── inference-api/
-│ ├── templates/
-│ │ ├── deployment.yaml
-│ │ ├── service.yaml
-│ │ └── serviceaccount.yaml
-│ ├── values.yaml
-│ └── Chart.yaml
-│
-├── platform/
-│ └── observability/
-│ └── prometheus + grafana setup
-│
-└── README.md
+<img width="535" height="599" alt="image" src="https://github.com/user-attachments/assets/124992cc-5a8f-42d6-a286-db0f8fa6663c" />
 
 
 ---
