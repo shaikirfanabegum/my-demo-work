@@ -56,17 +56,22 @@ jobs:
 
       - name: Install conftest + helm
         run: |
-          set -e
+          set -euo pipefail
+
           # conftest
-          curl -L https://github.com/open-policy-agent/conftest/releases/latest/download/conftest_0.56.0_Linux_x86_64.tar.gz \
-            | tar xz
+          CONFTEST_VERSION="0.56.0"
+          CONFTEST_TGZ="conftest_${CONFTEST_VERSION}_Linux_x86_64.tar.gz"
+          CONFTEST_URL="https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/${CONFTEST_TGZ}"
+
+          curl -fL "$CONFTEST_URL" -o "$CONFTEST_TGZ"
+          tar -xzf "$CONFTEST_TGZ"
           sudo mv conftest /usr/local/bin/conftest
           conftest --version
 
           # helm
           curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
           helm version
-
+          
       - name: Render Helm manifests (dev values)
         run: |
           mkdir -p /tmp/rendered
