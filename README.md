@@ -1,4 +1,4 @@
-# Humana AI/ML DevOps Platform Demo
+# AI/ML DevOps Platform Demo
 
 This repository demonstrates an **enterprise-grade AI/ML DevOps platform** with a strong focus on **deployment maturity, governance, observability, and reliability**, rather than cloud complexity.
 
@@ -6,7 +6,7 @@ The goal of this project is to showcase **how modern AI/ML services are built, d
 
 ---
 
-## 🎯 Purpose of This Demo
+## Purpose of This Demo
 
 This project is **not** about training a complex ML model or deploying to every cloud provider.
 
@@ -23,7 +23,7 @@ This is exactly the level expected for **Senior / Lead DevOps, SRE, or Platform 
 
 ---
 
-## 🧠 What Are We Deploying?
+## What Are We Deploying?
 
 We deploy a **sample AI inference API** that represents a real ML service used in production environments.
 
@@ -50,7 +50,7 @@ The ML logic itself is intentionally simple — **the focus is the platform, not
 
 ---
 
-## 🔧 Why Kubernetes (k3d / On-Prem)?
+## Why Kubernetes (k3d / On-Prem)?
 
 We intentionally deploy on **k3d (local Kubernetes)** instead of AWS/GCP/Azure.
 
@@ -67,7 +67,7 @@ We intentionally deploy on **k3d (local Kubernetes)** instead of AWS/GCP/Azure.
 
 ---
 
-## 📦 Why Helm?
+## Why Helm?
 
 Helm is used to:
 
