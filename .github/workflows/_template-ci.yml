@@ -20,8 +20,8 @@ on:
 
 permissions:
   contents: read
-  security-events: write
   packages: write
+  security-events: write
 
 jobs:
   test_lint:
