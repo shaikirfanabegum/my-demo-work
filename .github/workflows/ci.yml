@@ -1,5 +1,10 @@
 name: CI (Governed)
 
+permissions:
+  contents: read
+  packages: write
+  security-events: write
+
 on:
   pull_request:
   push:
