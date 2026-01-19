@@ -1,6 +1,6 @@
-# AI/ML DevOps Platform Demo
+# AI/ML DevSecOps Platform Demo
 
-This repository demonstrates an **enterprise-grade AI/ML DevOps platform** with a strong focus on **deployment maturity, governance, observability, and reliability**, rather than cloud complexity.
+This repository demonstrates an **enterprise-grade AI/ML DevSecOps platform** with a strong focus on **deployment maturity, governance, observability, and reliability**, rather than cloud complexity.
 
 The goal of this project is to showcase **how modern AI/ML services are built, deployed, monitored, and operated** in a regulated, large-scale enterprise environment, using Kubernetes, Helm, GitOps principles, and platform observability.
 
