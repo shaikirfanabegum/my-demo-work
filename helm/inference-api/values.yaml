@@ -1,9 +1,9 @@
 replicaCount: 2
 
 image:
-  repository: ghcr.io/shaikirfanabegum/humana-ai-ml-devops-demo/inference-api
-  tag: "latest"
-  pullPolicy: IfNotPresent
+  repository: ghcr.io/shaikirfanabegum/my-demo-work/inference-api
+  tag: metrics
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
