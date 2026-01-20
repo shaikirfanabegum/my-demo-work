@@ -7,6 +7,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN python -c "import prometheus_client; print('prometheus_client OK')"
 
 COPY app /app/app
 
