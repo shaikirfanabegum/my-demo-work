@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: inference-api
+  namespace: demo
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: inference-api
+      app.kubernetes.io/instance: inference-api
+  namespaceSelector:
+    matchNames:
+      - demo
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
+
