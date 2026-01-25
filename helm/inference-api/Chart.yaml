@@ -1,6 +1,6 @@
 apiVersion: v2
 name: inference-api
-description: Humana AI/ML DevOps demo - FastAPI inference API
+description: AI/ML DevOps demo - FastAPI inference API
 type: application
 version: 0.1.0
 appVersion: "1.0.0"
