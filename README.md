@@ -1,4 +1,4 @@
-# AI/ML DevSecOps Platform Demo now
+# AI/ML DevSecOps Platform Demo
 
 This repository demonstrates an **enterprise-grade AI/ML DevSecOps platform** with a strong focus on **deployment maturity, governance, observability, and reliability**, rather than cloud complexity.
 
